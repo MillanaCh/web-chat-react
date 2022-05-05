@@ -49,3 +49,40 @@
   height: 40px;
   margin-top: 20px;
 }
+/* Dashboard */
+.dashboard-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 250px auto;
+}
+.users {
+  background: linear-gradient(
+    325deg,
+    rgba(39, 107, 130, 1) 0,
+    rgba(49, 84, 129, 1) 100%
+  );
+  height: 100vh;
+  color: #fff;
+  padding: 20px 15px;
+}
+.main-content {
+  background-color: #ffffff;
+  height: 100vh;
+}
+.users .title {
+  text-align: start;
+  font-size: 23px;
+}
+.users li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.users ol li {
+  background-color: #e6eaee;
+  color: black;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
