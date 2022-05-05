@@ -1,38 +1,51 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  background-color: #2c5e81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.form-card {
+  width: 250px;
+  background-color: #e7eaed;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+.title {
+  font-size: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label {
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 0;
+  padding: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.submit-btn {
+  width: 100%;
+  background-color: #275f82;
+  border: none;
+  color: #fff;
+  height: 40px;
+  margin-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-gmail-btn {
+  width: 100%;
+  background-color: #275f82;
+  border: none;
+  color: #fff;
+  height: 40px;
+  margin-top: 20px;
 }
