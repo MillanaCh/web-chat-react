@@ -37,11 +37,24 @@ export const Dashboard = () => {
           </ol>
         </div>
       </div>
-      <div className="main-content"></div>
-      <button onClick={() => logOut()}>Log Out</button>
+      <div className="main-content">
+        <div className="messages">
+          <div className="message">
+            <p className="message-user">
+              Admin <span className="message-time">5:20px</span>
+            </p>
+            <p className="message-text">Welcome to the chat app</p>
+          </div>
+        </div>
+        <div className="message-footer">
+          <input className="message-input" placeholder="Message" />
+          <button className="message-btn">Send</button>
+          <button className="message-btn">Send location</button>
+        </div>
+      </div>
+      {/* <button onClick={() => logOut()}>Log Out</button> */}
     </div>
   ) : (
-    
     <Navigate to="/signin" />
   );
 };

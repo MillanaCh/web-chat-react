@@ -1,3 +1,7 @@
+body {
+  font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  margin:0
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -66,15 +70,11 @@
   color: #fff;
   padding: 20px 15px;
 }
-.main-content {
-  background-color: #ffffff;
-  height: 100vh;
-}
 .users .title {
   text-align: start;
   font-size: 23px;
 }
-.users li {
+.users ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -85,4 +85,52 @@
   margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
+}
+.main-content {
+  background-color: #ffffff;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 60px;
+}
+.messages {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+.message {
+  margin-bottom: 20px;
+}
+.message-user {
+  font-size: 14px;
+  font-weight: bold;
+}
+.message-time {
+  font-weight: 300;
+  color:#9d9d9d
+}
+.message-text{
+  font-size: 15px;
+  margin-top: 5px;
+}
+.message-footer {
+  background-color: rgb(237, 235, 235);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 0;
+  background-color: #fff;
+  border: none;
+}
+.message-btn {
+  padding: 10px;
+  background-color: #275f82;
+  border-radius: 0;
+  border: none;
+  margin-left: 10px;
+  color: #fff;
 }
